@@ -220,12 +220,21 @@ Wᴇʟᴄᴏᴍᴇ ᴛᴏ {chat}.
 
 ꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ"""
   
-    IMDB_TEMPLATE = """<b>Qᴜᴇʀʏ: {query}</b>
+    IMDB_TEMPLATE = """𝙷𝙴𝚈 {message.from_user.mention},
 
-🏷 Tɪᴛʟᴇ: <a href={url}>{title}</a>
-🎭 Gᴇɴʀᴇꜱ: {genres}
-📆 Yᴇᴀʀ: <a href={url}/releaseinfo>{year}</a>
-🌟 Rᴀᴛɪɴɢ: <a href={url}/ratings>{rating}</a>/10"""
+                    {query}
+
+<b>𝚃𝙸𝚃𝙻𝙴</b>: <a href={url}>{title}</a>
+ 𝙶𝙴𝙽𝚁𝙴𝚂: {genres}
+ 𝚈𝙴𝙰𝚁: <a href={url}/releaseinfo>{year}</a>
+𝚁𝙰𝙸𝚃𝙸𝙽𝙶: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+𝙻𝙰𝙽 : <code>{languages}</code>
+𝙲𝙰𝚂𝚃 : <code>{cast}</code>
+𝚁𝚄𝙽𝚃𝙸𝙼𝙴: {runtime} Minutes
+𝚁𝙴𝙻𝙴𝙰𝚂𝙴 𝙸𝙽𝙵𝙾: {release_date}
+𝙲𝙾𝚄𝙽𝚃𝚁𝙸𝙴𝚂 : <code>{countries}</code>
+
+𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 {message.chat.title}"""
    
   
  
